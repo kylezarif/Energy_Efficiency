@@ -1,5 +1,5 @@
 #################################
-# Create eefm set, validation set
+# Create eef set, validation set
 #################################
 
 if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
@@ -9,9 +9,9 @@ if(!require(data.table)) install.packages("data.table", repos = "http://cran.us.
 # Energy Efficiency dataset:
 # https://archive.ics.uci.edu/ml/machine-learning-databases/00242/
 # https://archive.ics.uci.edu/ml/datasets/Energy+efficiency
-# https://raw.githubusercontent.com/kylezarif/energy-efficiency/master/ENB2012_data.xlsx
+# https://raw.githubusercontent.com/kylezarif/Energy_Efficiency/master/ENB2012_data.xlsx
 
-url <- "https://raw.githubusercontent.com/kylezarif/energy-efficiency/master/ENB2012_data.xlsx"
+url <- "https://raw.githubusercontent.com/kylezarif/Energy_Efficiency/master/ENB2012_data.xlsx"
 eefm <- read.delim(url)
 
 colnames(eefm) <- c("Relative_Compactness","Surface_Area","Wall_Area",
@@ -19,3 +19,4 @@ colnames(eefm) <- c("Relative_Compactness","Surface_Area","Wall_Area",
                     " Glazing_Area_Distribution", "Heating_Load", "Cooling_Load")
 
 
+head(eefm)
