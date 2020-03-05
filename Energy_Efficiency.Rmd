@@ -2,9 +2,7 @@
 title: "Energy Efficiency"
 author: "Khalil Zarifsadr (Kyle Zarif)"
 date: "3/5/2020"
-output:
-  word_document: default
-  pdf_document: default
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
